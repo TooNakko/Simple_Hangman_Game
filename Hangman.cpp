@@ -158,7 +158,7 @@ int main()
 {
     srand((int)time(0));
     vector<string> list;
-    ifstream f_in("hang.txt");
+    ifstream f_in("Words_list.txt");
     string word;
     while (f_in >> word)
     {
