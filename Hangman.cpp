@@ -32,116 +32,119 @@ void TextColor(int color)
 {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
-void DrawMan(int wrong_attempts, string origin_word){
+void DrawMan(int wrong_attempts, string origin_word)
+{
     switch (wrong_attempts)
-        {
-        case 0:
-            cout << "   -------------    \n";
-            cout << "   |                \n";
-            cout << "   |                \n";
-            cout << "   |                \n";
-            cout << "   |                \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-            break;
-        case 1:
-            cout << "   -------------    \n";
-            cout << "   |           |    \n";
-            cout << "   |                \n";
-            cout << "   |                \n";
-            cout << "   |                \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-            break;
-        case 2:
-            cout << "   -------------    \n";
-            cout << "   |           |    \n";
-            cout << "   |           O    \n";
-            cout << "   |                \n";
-            cout << "   |                \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-            break;
-        case 3:
-            cout << "   -------------    \n";
-            cout << "   |           |    \n";
-            cout << "   |           0    \n";
-            cout << "   |           |    \n";
-            cout << "   |                \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-            break;
-        case 4:
-            cout << "   -------------    \n";
-            cout << "   |           |    \n";
-            cout << "   |           0    \n";
-            cout << "   |           |\\  \n";
-            cout << "   |                \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-            break;
-        case 5:
-            cout << "   -------------    \n";
-            cout << "   |           |    \n";
-            cout << "   |           0    \n";
-            cout << "   |          /|\\  \n";
-            cout << "   |                \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-            break;
-        case 6:
-            cout << "   -------------    \n";
-            cout << "   |           |    \n";
-            cout << "   |           0    \n";
-            cout << "   |          /|\\  \n";
-            cout << "   |            \\  \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-            break;
-        case 8:
-            cout << "   -------------   \n";
-            cout << "   |               \n";
-            cout << "   |          yay...\n";
-            cout << "   |           0   \n";
-            cout << "   |          /|\\ \n";
-            cout << "   |          / \\ \n";
-            cout << " -----\n";
-            cout << "You did it, the word is ";
-			TextColor(12);
-			cout<< origin_word << endl;
-			TextColor(7);
-            break;
-        case 9:
-        	cout << "   -------------    \n";
-            cout << "   |           |    \n";
-            cout << "   |           0 ~~ \n";
-            cout << "   |          /|\\  \n";
-            cout << "   |          / \\  \n";
-            cout << "   |     \n";
-            cout << " -----   \n";
-    	    cout << "Out of attempts, the word is ";
-    	    TextColor(12);
-			cout<< origin_word << endl;
-			TextColor(7);
-            break;
-        default:
-            break;
-        }
+    {
+    case 0:
+        cout << "   -------------    \n";
+        cout << "   |                \n";
+        cout << "   |                \n";
+        cout << "   |                \n";
+        cout << "   |                \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        break;
+    case 1:
+        cout << "   -------------    \n";
+        cout << "   |           |    \n";
+        cout << "   |                \n";
+        cout << "   |                \n";
+        cout << "   |                \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        break;
+    case 2:
+        cout << "   -------------    \n";
+        cout << "   |           |    \n";
+        cout << "   |           O    \n";
+        cout << "   |                \n";
+        cout << "   |                \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        break;
+    case 3:
+        cout << "   -------------    \n";
+        cout << "   |           |    \n";
+        cout << "   |           0    \n";
+        cout << "   |           |    \n";
+        cout << "   |                \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        break;
+    case 4:
+        cout << "   -------------    \n";
+        cout << "   |           |    \n";
+        cout << "   |           0    \n";
+        cout << "   |           |\\  \n";
+        cout << "   |                \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        break;
+    case 5:
+        cout << "   -------------    \n";
+        cout << "   |           |    \n";
+        cout << "   |           0    \n";
+        cout << "   |          /|\\  \n";
+        cout << "   |                \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        break;
+    case 6:
+        cout << "   -------------    \n";
+        cout << "   |           |    \n";
+        cout << "   |           0    \n";
+        cout << "   |          /|\\  \n";
+        cout << "   |            \\  \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        break;
+    case 8:
+        cout << "   -------------   \n";
+        cout << "   |               \n";
+        cout << "   |          yay...\n";
+        cout << "   |           0   \n";
+        cout << "   |          /|\\ \n";
+        cout << "   |          / \\ \n";
+        cout << " -----\n";
+        cout << "You did it, the word is ";
+        TextColor(12);
+        cout << origin_word << endl;
+        TextColor(7);
+        break;
+    case 9:
+        cout << "   -------------    \n";
+        cout << "   |           |    \n";
+        cout << "   |           0 ~~ \n";
+        cout << "   |          /|\\  \n";
+        cout << "   |          / \\  \n";
+        cout << "   |     \n";
+        cout << " -----   \n";
+        cout << "Out of attempts, the word is ";
+        TextColor(12);
+        cout << origin_word << endl;
+        TextColor(7);
+        break;
+    default:
+        break;
+    }
 }
-vector<string> readWordListFromFile(const string& filePath)
+vector<string> readWordListFromFile(const string &filePath)
 {
     vector<string> list;
     ifstream f_in(filePath);
     string word;
-    while (f_in>>word)
+    while (f_in >> word)
     {
         list.push_back(word);
     }
-    return list; 
+    return list;
 }
-void normalize(char &guess){
-    if(65<=guess && guess<=90){
-        guess+=32;
+void normalize(char &guess)
+{
+    if (65 <= guess && guess <= 90)
+    {
+        guess += 32;
     }
 }
 int main()
@@ -150,13 +153,13 @@ int main()
     vector<string> list;
     ifstream f_in("hang.txt");
     string word;
-    while (f_in>>word)
+    while (f_in >> word)
     {
         list.push_back(word);
     }
-    int random = rand() %(list.size()-1) +1;
-    
-    string origin_word = list[random]; 
+    int random = rand() % (list.size() - 1) + 1;
+
+    string origin_word = list[random];
     string hidden_word = string(origin_word.length(), '-');
     vector<char> guessed_words;
     int wrong_attempts = 0;
@@ -168,7 +171,7 @@ int main()
          << max_attempts << " attempts.\nGood luck!" << endl;
     while (wrong_attempts < max_attempts)
     {
-        DrawMan(wrong_attempts,origin_word);
+        DrawMan(wrong_attempts, origin_word);
         cout << hidden_word << endl;
         char guess;
         int pass = 0, continue_check = 0;
@@ -186,8 +189,8 @@ int main()
 
         if (continue_check == 1)
         {
-        	Sleep(600);
-        	clrscr();
+            Sleep(600);
+            clrscr();
             continue;
         }
         guessed_words.push_back(guess);
@@ -206,19 +209,18 @@ int main()
             cout << "Wrong character, you have " << max_attempts - wrong_attempts << " attempt(s) left" << endl;
             Sleep(600);
         }
-        if (count == origin_word.size()) //Correctly guessed all the char
+        if (count == origin_word.size()) // Correctly guessed all the char
         {
             wrong_attempts = 8;
-        	clrscr();
-        	DrawMan(wrong_attempts,origin_word);
+            clrscr();
+            DrawMan(wrong_attempts, origin_word);
             break;
         }
         clrscr();
     }
-    if (count != origin_word.size())    //Failed
+    if (count != origin_word.size()) // Failed
     {
-    	wrong_attempts = 9;
-    	DrawMan(wrong_attempts,origin_word);
-            
+        wrong_attempts = 9;
+        DrawMan(wrong_attempts, origin_word);
     }
 }
