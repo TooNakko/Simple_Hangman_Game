@@ -5,5 +5,5 @@ Thêm từ KHÔNG CHỨA DẤU CÁCH trong file Words_list.txt đi kèm, mỗi d
 Muốn chỉ định 1 từ? Thay dòng:
     `int random = rand() % (list.size() - 1) + 1;` 
 trong Hangman.cpp bằng
-    `int random = n;` 
+    `int random = n-1;` 
 với n là dòng thứ n chứa từ muốn chơi.
