@@ -38,96 +38,100 @@ void DrawMan(int wrong_attempts, string origin_word)
     {
     case 0:
         gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |                \n";
+        gotoXY(20,11);cout << "   |                \n";
         gotoXY(20,12); cout << "   |                \n";
-        gotoXY(20,13); cout << "   |                \n";
-        gotoXY(20,14); cout << "   |                \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
+        gotoXY(20,13);cout << "   |                \n";
+        gotoXY(20,14);cout << "   |                \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
         break;
     case 1:
-        gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |           |    \n";
-        gotoXY(20,12); cout << "   |                \n";
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |                \n";
         gotoXY(20,13); cout << "   |                \n";
-        gotoXY(20,14); cout << "   |                \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
+        gotoXY(20,14);cout << "   |                \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
         break;
     case 2:
-        gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |           |    \n";
-        gotoXY(20,12); cout << "   |           O    \n";
-        gotoXY(20,13); cout << "   |                \n";
-        gotoXY(20,14); cout << "   |                \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |           O    \n";
+        gotoXY(20,13);cout << "   |                \n";
+        gotoXY(20,14);cout << "   |                \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
         break;
     case 3:
-        gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |           |    \n";
-        gotoXY(20,12); cout << "   |           0    \n";
-        gotoXY(20,13); cout << "   |           |    \n";
-        gotoXY(20,14); cout << "   |                \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |           0    \n";
+        gotoXY(20,13);cout << "   |           |    \n";
+        gotoXY(20,14);cout << "   |                \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
         break;
     case 4:
-        gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |           |    \n";
-        gotoXY(20,12); cout << "   |           0    \n";
-        gotoXY(20,13); cout << "   |           |\\  \n";
-        gotoXY(20,14); cout << "   |                \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |           0    \n";
+        gotoXY(20,13);cout << "   |           |\\  \n";
+        gotoXY(20,14);cout << "   |                \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
         break;
     case 5:
-        gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |           |    \n";
-        gotoXY(20,12); cout << "   |           0    \n";
-        gotoXY(20,13); cout << "   |          /|\\  \n";
-        gotoXY(20,14); cout << "   |                \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |           0    \n";
+        gotoXY(20,13);cout << "   |          /|\\  \n";
+        gotoXY(20,14);cout << "   |                \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
         break;
     case 6:
-        gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |           |    \n";
-        gotoXY(20,12); cout << "   |           0    \n";
-        gotoXY(20,13); cout << "   |          /|\\  \n";
-        gotoXY(20,14); cout << "   |            \\  \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |           0    \n";
+        gotoXY(20,13);cout << "   |          /|\\  \n";
+        gotoXY(20,14);cout << "   |            \\  \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
         break;
     case 8:
-        gotoXY(20,10); cout << "   -------------   \n";
-        gotoXY(20,11); cout << "   |               \n";
-        gotoXY(20,12); cout << "   |          yay...\n";
-        gotoXY(20,13); cout << "   |           0   \n";
-        gotoXY(20,14); cout << "   |          /|\\ \n";
-        gotoXY(20,15); cout << "   |          / \\ \n";
-        gotoXY(20,16); cout << " -----\n";
-        gotoXY(20,17); cout << "You did it, the word is ";
+        gotoXY(20,10);cout << "   -------------   \n";
+        gotoXY(20,11);cout << "   |               \n";
+        gotoXY(20,12);cout << "   |          yay...\n";
+        gotoXY(20,13);cout << "   |           0   \n";
+        gotoXY(20,14);cout << "   |          /|\\ \n";
+        gotoXY(20,15);cout << "   |          / \\ \n";
+        gotoXY(20,16);cout << " -----\n";
+        gotoXY(20,17);cout << "You did it, the word is ";
         TextColor(12);
-        gotoXY(20,18); cout << origin_word << endl;
+        gotoXY(20,18);cout << origin_word << endl;
         TextColor(7);
         break;
     case 9:
-        gotoXY(20,10); cout << "   -------------    \n";
-        gotoXY(20,11); cout << "   |           |    \n";
-        gotoXY(20,12); cout << "   |           0 ~~ \n";
-        gotoXY(20,13); cout << "   |          /|\\  \n";
-        gotoXY(20,14); cout << "   |          / \\  \n";
-        gotoXY(20,15); cout << "   |     \n";
-        gotoXY(20,16); cout << " -----   \n";
-        gotoXY(20,17); cout << "Out of attempts, the word is ";
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |           0 ~~ \n";
+        gotoXY(20,13);cout << "   |          /|\\  \n";
+        gotoXY(20,14);cout << "   |          / \\  \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
+        gotoXY(20,17);cout << "Out of attempts, the word is ";
         TextColor(12);
-        gotoXY(20,18); cout << origin_word << endl;
+        gotoXY(20,18);cout << origin_word << endl;
         TextColor(7);
         break;
     default:
         break;
     }
+}
+void DrawHDWord(string hidden_word){
+    gotoXY(20,19);cout << hidden_word << endl;
+    gotoXY(20,20);cout << "Enter your character: ";
 }
 vector<string> readWordListFromFile(const string &filePath)
 {
@@ -147,23 +151,26 @@ void normalize(char &guess)
         guess += 32;
     }
 }
-void Welcome(string origin_word, int max_attempts)
-{
-    gotoXY(20, 6);
-    cout << "Welcome to hangman game!" << endl;
-    gotoXY(20, 7);
-    cout << "The words do not contain any special character or numbers, guess wisely." << endl;
-    gotoXY(20, 8);
-    cout << "Now let's start, the word has " << origin_word.length() << " character(s) and you have "
-         << max_attempts << " attempts.";
-    gotoXY(20, 9);
-    cout << "Good luck!" << endl;
+void Welcome(string origin_word, int max_attempts){
+	gotoXY(20,6); cout << "Welcome to hangman game!" << endl;
+    gotoXY(20,7); cout << "The words do not contain any special character or numbers, guess wisely." << endl;
+    gotoXY(20,8); cout << "Now let's start, the word has " << origin_word.length() << " character(s) and you have "
+         << max_attempts<< " attempts.";
+	gotoXY(20,9); cout << "Good luck!" << endl;
+}
+void DrawGuessedWords(vector<char> guessed_words){
+	gotoXY(40,9); cout<<"Guessed words: ";
+    for (int i = 0; i < guessed_words.size(); i++)
+    {
+        gotoXY(40+i,10); cout<<guessed_words[i];
+    }
+    
 }
 int main()
 {
     srand((int)time(0));
     vector<string> list;
-    ifstream f_in("Words_list.txt");
+    ifstream f_in("hang.txt");
     string word;
     while (f_in >> word)
     {
@@ -178,24 +185,24 @@ int main()
     int max_attempts = 7; // max attempts
     int count = 0;
     Welcome(origin_word, max_attempts);
-
+   
+    
     while (wrong_attempts < max_attempts)
     {
         DrawMan(wrong_attempts, origin_word);
-        gotoXY(20, 19);
-        cout << hidden_word << endl;
+        DrawHDWord(hidden_word);
+        DrawGuessedWords(guessed_words);
+
         char guess;
         int pass = 0, continue_check = 0;
-        gotoXY(20, 20);
-        cout << "Enter your character: ";
+        gotoXY(42,20);
         cin >> guess;
         normalize(guess);
         for (int k = 0; k < guessed_words.size(); k++)
         {
             if (guess == guessed_words[k])
             {
-                gotoXY(20, 21);
-                cout << "You guessed that one, try another character!" << endl;
+                gotoXY(20,21);cout << "You guessed that one, try another character!" << endl;
                 continue_check = 1;
             }
         }
@@ -219,8 +226,7 @@ int main()
         if (pass == 0)
         {
             wrong_attempts++;
-            gotoXY(20, 21);
-            cout << "Wrong character, you have " << max_attempts - wrong_attempts << " attempt(s) left" << endl;
+            gotoXY(20,21);cout << "Wrong character, you have " << max_attempts - wrong_attempts << " attempt(s) left" << endl;
             Sleep(600);
         }
         if (count == origin_word.size()) // Correctly guessed all the char
@@ -228,6 +234,7 @@ int main()
             wrong_attempts = 8;
             clrscr();
             DrawMan(wrong_attempts, origin_word);
+            DrawGuessedWords(guessed_words);
             break;
         }
         clrscr();
@@ -236,5 +243,8 @@ int main()
     {
         wrong_attempts = 9;
         DrawMan(wrong_attempts, origin_word);
+        DrawGuessedWords(guessed_words);
+
     }
+    gotoXY(0,0);
 }
