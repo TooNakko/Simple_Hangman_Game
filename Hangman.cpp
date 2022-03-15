@@ -113,6 +113,7 @@ void DrawMan(int wrong_attempts, string origin_word)
         TextColor(7);
         break;
     case 9:
+    	while(true){
         gotoXY(20,10);cout << "   -------------    \n";
         gotoXY(20,11);cout << "   |           |    \n";
         gotoXY(20,12);cout << "   |           0 ~~ \n";
@@ -124,6 +125,48 @@ void DrawMan(int wrong_attempts, string origin_word)
         TextColor(12);
         gotoXY(20,18);cout << origin_word << endl;
         TextColor(7);
+        Sleep(250);
+        clrscr();
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           /    \n";
+        gotoXY(20,12);cout << "   |          0 ~~ \n";
+        gotoXY(20,13);cout << "   |         /|\\  \n";
+        gotoXY(20,14);cout << "   |         / \\  \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
+        gotoXY(20,17);cout << "Out of attempts, the word is ";
+        TextColor(12);
+        gotoXY(20,18);cout << origin_word << endl;
+        TextColor(7);
+        Sleep(250);
+        clrscr();
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           |    \n";
+        gotoXY(20,12);cout << "   |           0 ~~ \n";
+        gotoXY(20,13);cout << "   |          /|\\  \n";
+        gotoXY(20,14);cout << "   |          / \\  \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
+        gotoXY(20,17);cout << "Out of attempts, the word is ";
+        TextColor(12);
+        gotoXY(20,18);cout << origin_word << endl;
+        TextColor(7);
+        Sleep(250);
+        clrscr();
+        gotoXY(20,10);cout << "   -------------    \n";
+        gotoXY(20,11);cout << "   |           \\    \n";
+        gotoXY(20,12);cout << "   |            0 ~~ \n";
+        gotoXY(20,13);cout << "   |           /|\\  \n";
+        gotoXY(20,14);cout << "   |           / \\  \n";
+        gotoXY(20,15);cout << "   |     \n";
+        gotoXY(20,16);cout << " -----   \n";
+        gotoXY(20,17);cout << "Out of attempts, the word is ";
+        TextColor(12);
+        gotoXY(20,18);cout << origin_word << endl;
+        TextColor(7);
+        Sleep(250);
+        clrscr();
+    }
         break;
     default:
         break;
@@ -170,7 +213,7 @@ int main()
 {
     srand((int)time(0));
     vector<string> list;
-    ifstream f_in("hang.txt");
+    ifstream f_in("Words_list.txt");
     string word;
     while (f_in >> word)
     {
@@ -202,6 +245,7 @@ int main()
         {
             if (guess == guessed_words[k])
             {
+            	gotoXY(40+k,10); TextColor(12); cout<<guessed_words[k]; TextColor(7); 
                 gotoXY(20,21);cout << "You guessed that one, try another character!" << endl;
                 continue_check = 1;
             }
@@ -226,7 +270,11 @@ int main()
         if (pass == 0)
         {
             wrong_attempts++;
-            gotoXY(20,21);cout << "Wrong character, you have " << max_attempts - wrong_attempts << " attempt(s) left" << endl;
+            gotoXY(20,21);cout << "Wrong character, you have ";
+			TextColor(12);
+			cout << max_attempts - wrong_attempts;
+			TextColor(7);
+			cout << " attempt(s) left" << endl;
             Sleep(600);
         }
         if (count == origin_word.size()) // Correctly guessed all the char
