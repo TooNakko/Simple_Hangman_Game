@@ -34,6 +34,7 @@ void TextColor(int color)
 }
 void DrawMan(int wrong_attempts, string origin_word)
 {
+	int count;
     switch (wrong_attempts)
     {
     case 0:
@@ -172,7 +173,8 @@ void DrawMan(int wrong_attempts, string origin_word)
 
         break;
     case 9:
-        while (true)
+    	count = 0;
+        while (count<=4)
         {
             gotoXY(20, 10);
             cout << "   -------------    \n";
@@ -194,7 +196,7 @@ void DrawMan(int wrong_attempts, string origin_word)
             gotoXY(20, 18);
             cout << origin_word << endl;
             TextColor(7);
-            Sleep(250);
+            Sleep(200);
             clrscr();
             gotoXY(20, 10);
             cout << "   -------------    \n";
@@ -216,7 +218,7 @@ void DrawMan(int wrong_attempts, string origin_word)
             gotoXY(20, 18);
             cout << origin_word << endl;
             TextColor(7);
-            Sleep(250);
+            Sleep(200);
             clrscr();
             gotoXY(20, 10);
             cout << "   -------------    \n";
@@ -238,7 +240,7 @@ void DrawMan(int wrong_attempts, string origin_word)
             gotoXY(20, 18);
             cout << origin_word << endl;
             TextColor(7);
-            Sleep(250);
+            Sleep(200);
             clrscr();
             gotoXY(20, 10);
             cout << "   -------------    \n";
@@ -260,9 +262,30 @@ void DrawMan(int wrong_attempts, string origin_word)
             gotoXY(20, 18);
             cout << origin_word << endl;
             TextColor(7);
-            Sleep(250);
+            Sleep(200);
             clrscr();
+            count++;
         }
+        gotoXY(20, 10);
+            cout << "   -------------    \n";
+            gotoXY(20, 11);
+            cout << "   |           |    \n";
+            gotoXY(20, 12);
+            cout << "   |           0 ~~ \n";
+            gotoXY(20, 13);
+            cout << "   |          /|\\  \n";
+            gotoXY(20, 14);
+            cout << "   |          / \\  \n";
+            gotoXY(20, 15);
+            cout << "   |     \n";
+            gotoXY(20, 16);
+            cout << " -----   \n";
+            gotoXY(20, 17);
+            cout << "Out of attempts, the word is ";
+            TextColor(12);
+            gotoXY(20, 18);
+            cout << origin_word << endl;
+            TextColor(7);
         break;
     default:
         break;
@@ -407,7 +430,7 @@ int main()
             DrawMan(wrong_attempts, origin_word);
             DrawGuessedWords(guessed_words);
         }
-        Sleep(2600);
+        
         gotoXY(20, 21);
         cout << "Enter 0 to quit, enter 1 to retry: " << endl;
         char choice;
@@ -425,8 +448,13 @@ int main()
                 break;
             }
         }
-        if (retry == -1)
+        if (retry == -1){
+        	gotoXY(20,22);
+        	TextColor(12);
+        	cout<<"See you next time";
+        	Sleep(1200);
             break;
+        }
         clrscr();
     }
 }
