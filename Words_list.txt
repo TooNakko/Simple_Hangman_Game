@@ -10,7 +10,6 @@ obstinate
 ferocious
 monochrome
 proofreading
-<<<<<<< HEAD
 inorganic
 puzzlement
 relentlessly
